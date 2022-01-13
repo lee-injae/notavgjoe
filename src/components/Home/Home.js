@@ -10,7 +10,7 @@ function Home() {
 
     const [menuOpen, setMenuOpen] = useState(false)
     const [showMintNotReady, setShowMintNotReady] =useState("")
-    const [canClick, setCanClick] =useState(false)
+    const [canClick, setCanClick] =useState(true)
 
     const onMintClickHandler = () => {
         if (canClick === false) {
@@ -329,7 +329,7 @@ function Home() {
                 
                     <div>
                         <p className="text-center">© 2021 Aggressively Unemployed</p>
-                        <p className='app-version'>v1.2 </p>
+                        <p className='app-version'>v1.22 </p>
                     </div>
                 
                 </div>
