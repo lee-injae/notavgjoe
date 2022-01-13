@@ -4,27 +4,6 @@ import Web3 from "web3";
 // log
 import { fetchData } from "../data/dataActions";
 
-const configg = {
-  
-    "CONTRACT_ADDRESS": "0xD8aEafe99f3f7230F4786D01857fca3a0CbCAe9a",
-    "SCAN_LINK": "https://ropsten.etherscan.io/address/0xD8aEafe99f3f7230F4786D01857fca3a0CbCAe9a",
-    "NETWORK": {
-      "NAME": "Ethereum",
-      "SYMBOL": "ETH",
-      "ID": 1
-    },
-    "NFT_NAME": "!=Avg(Joe)",
-    "SYMBOL": "JOE",
-    "MAX_SUPPLY": 3333,
-    "WEI_COST": 50000000000000000,
-    "DISPLAY_COST": 0.05,
-    "GAS_LIMIT": 285000,
-    "MARKETPLACE": "Opeansea",
-    "MARKETPLACE_LINK": "https://opensea.io/collection/notavgjoe",
-    "SHOW_BACKGROUND": true
-  
-}
-
 
 const connectRequest = () => {
   return {

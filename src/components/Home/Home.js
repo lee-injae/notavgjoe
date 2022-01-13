@@ -329,7 +329,7 @@ function Home() {
                 
                     <div>
                         <p className="text-center">© 2021 Aggressively Unemployed</p>
-                    
+                        <p className='app-version'>v1.2 </p>
                     </div>
                 
                 </div>

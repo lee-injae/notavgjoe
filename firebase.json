@@ -3,6 +3,10 @@
     {
       "public": "build",
       "target": "prod",
+      "headers": [
+        {"source": "**/*.html", "headers": [{"key": "Cache-Control", "value": "max-age=0, no-cache"}]},
+        {"source": "**/*.@css|js", "headers": [{"key": "Cache-Control", "value": "max-age=0"}]}
+      ], 
       "ignore": [
         "firebase.json",
         "**/.*",
@@ -18,6 +22,10 @@
     {
       "public": "build",
       "target": "mint-test",
+      "headers": [
+        {"source": "**/*.html", "headers": [{"key": "Cache-Control", "value": "max-age=0, no-cache"}]},
+        {"source": "**/*.@css|js", "headers": [{"key": "Cache-Control", "value": "max-age=0"}]}
+      ], 
       "ignore": [
         "firebase.json",
         "**/.*",
@@ -32,3 +40,5 @@
     }
   ]
 }
+
+
