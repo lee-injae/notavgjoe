@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "notavgjoe-33989"
+  },
+  "targets": {
+    "notavgjoe-33989": {
+      "hosting": {
+        "mint-test": [
+          "joe-mint-testing"
+        ],
+        "prod": [
+          "notavgjoe-33989"
+        ]
+      }
+    }
   }
 }

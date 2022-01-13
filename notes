@@ -1,0 +1,128 @@
+{/* { <p>{data.totalSupply} / {CONFIG.MAX_SUPPLY}</p>} */}
+       {/* {<a target="_blank" href={CONFIG.SCAN_LINK}>{truncate(CONFIG.CONTRACT_ADDRESS, 15)}</a> }  */}
+{/* 
+       {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+              <>
+                <h2
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  The sale has ended.
+                </h2>
+                <p
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  You can still find {CONFIG.NFT_NAME} on
+                </p>
+                <br />
+                <a target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                  {CONFIG.MARKETPLACE}
+                </a>
+              </>
+            ) : (
+              <>
+                <p
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}.
+                </p>
+                <br />
+                <p
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  Excluding gas fees.
+                </p>
+                <br />
+                {blockchain.account === "" ||
+                blockchain.smartContract === null ? (
+                  
+                    <p
+                      style={{
+                        textAlign: "center",
+                        color: "var(--accent-text)",
+                      }}
+                    >
+                      Connect to the {CONFIG.NETWORK.NAME} network
+                    </p>
+                    
+                    <button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        dispatch(connect());
+                        getData();
+                      }}
+                    >
+                      CONNECT
+                    </button>
+                    {blockchain.errorMsg !== "" ? (
+                      <>
+                        <s.SpacerSmall />
+                        <s.TextDescription
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)",
+                          }}
+                        >
+                          {blockchain.errorMsg}
+                        </s.TextDescription>
+                      </>
+                    ) : null}
+                  
+                ) : (
+                  <>
+                    <p
+                      style={{
+                        textAlign: "center",
+                        color: "var(--accent-text)",
+                      }}
+                    >
+                      {feedback}
+                    </p>
+                    <br />
+                    <button
+                        style={{ lineHeight: 0.4 }}
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          decrementMintAmount();
+                        }}
+                      >
+                        -
+                      </button>
+                      <br />
+                      <p
+                        style={{
+                          textAlign: "center",
+                          color: "var(--accent-text)",
+                        }}
+                      >
+                        {mintAmount}
+                      </p>
+                      <br />
+                      <button
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          incrementMintAmount();
+                        }}
+                      >
+                        +
+                      </button>
+                    
+                    <br />
+                    
+                      <button
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          claimNFTs();
+                          getData();
+                        }}
+                      >
+                        {claimingNft ? "BUSY" : "BUY"}
+                      </button>
+                   
+                  </>
+                )}
+              </>
+            )} */}
