@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Home from './components/Home/Home'
 import Mint from './components/Mint/Mint'
+import Cache from './components/Cache/Cache'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/mint" element={<Mint />} />
+                <Route path="/cache" element={<Cache />} />
                 {/* <Route path="/">
                     <Home />
                 </Route>
