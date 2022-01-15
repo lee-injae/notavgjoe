@@ -14,7 +14,7 @@ function Home() {
 
     const onMintClickHandler = () => {
         if (canClick === false) {
-            setShowMintNotReady("Pre-sale will begin at 8PM US Eastern on Thursday 13th, 2022")
+            setShowMintNotReady("Public sale will begin at 8PM US Eastern on Friday 14th, 2022")
         }
     }
 

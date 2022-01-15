@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x98ac92aDD0Db6a4431799e940CFaf588A6Ec392a",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x98ac92aDD0Db6a4431799e940CFaf588A6Ec392a",
+  "CONTRACT_ADDRESS": "0x7b46f44b5C6bb9192854C8E25D75436Bd98124d6",
+  "SCAN_LINK": "https://etherscan.io/address/0x7b46f44b5C6bb9192854C8E25D75436Bd98124d6",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
@@ -9,9 +9,9 @@
   "NFT_NAME": "!=Avg(Joe)",
   "SYMBOL": "!=Avg(Joe) NFT",
   "MAX_SUPPLY": 3333,
-  "WEI_COST": 30000000000000000,
-  "DISPLAY_COST": 0.03,
-  "GAS_LIMIT": 285000,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 0.05,
+  "GAS_LIMIT": 210000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/notavgjoe",
   "SHOW_BACKGROUND": true

@@ -140,8 +140,8 @@ function Mint() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mintWhiltelist(mintAmount)   //Pre-sale
-      // .mintPublic(mintAmount)    //Public Sale
+      // .mintWhitelist(mintAmount)   //Pre-sale
+      .mintPublic(mintAmount)    //Public Sale
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -150,9 +150,9 @@ function Mint() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, your wallet is not on the Whitelist. Please check");  // During Pre-sale
+        // setFeedback("Sorry, your wallet is not on the Whitelist. Please check");  // During Pre-sale
         // setFeedback("Sorry, the public sale will begin at 8 US Easter Time on JAN 14th, 2022."); //
-        // setFeedback("Sorry, something went wrong please try again later."); //During Public Sale 
+        setFeedback("Sorry, something went wrong, please try again"); //During Public Sale 
         setClaimingNft(false);
       })
       .then((receipt) => {
@@ -248,7 +248,7 @@ function Mint() {
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 24,
+              padding: 20,
               borderRadius: 24,
               border: "4px dashed var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
@@ -257,8 +257,21 @@ function Mint() {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 30,
                 fontWeight: "bold",
+                color: "var(--accent-text)",
+              }}
+            >
+              Unique & one-of-a-kind !=Avg(Joe) is waiting for you
+              <br/>
+               We'd love to see you & hear your story soon!
+            </s.TextTitle>
+            <s.SpacerSmall />
+            <s.TextTitle
+              style={{
+                textAlign: "center",
+                fontSize: 40,
+                // fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
             >
@@ -295,18 +308,17 @@ function Mint() {
             ) : (
               <>
                 <s.TextTitle
-                  style={{ textAlign: "center", color: "#ff3766" }}
+                  style={{ textAlign: "center", color: "black", fontWeight: "bold" }}
                 >
-                  One {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                  One {CONFIG.SYMBOL} is {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
                 <s.SpacerXSmall />
-                <s.TextDescription
+                {/* <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
-                </s.TextDescription>
-                <s.SpacerSmall />
+                </s.TextDescription> */}
+                {/* <s.SpacerSmall /> */}
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
@@ -397,11 +409,21 @@ function Mint() {
                         {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
                     </s.Container>
+                    <s.SpacerXSmall />
+                    <s.TextDescription>
+                      (Don't worry! Clicking BUY won't execute until you confirm in your wallet)
+                    </s.TextDescription>
                   </>
                 )}
               </>
             )}
-            <s.SpacerMedium />
+            <s.SpacerSmall />
+              <a href="https://opensea.io/collection/notavgjoe" target="_blank" style={{ width: "40px" }}>
+                      <img 
+                        alt="Opensea logo"
+                        src="/config/images/opensea-logo.png"
+                      />
+              </a>
           </s.Container>
           <s.SpacerLarge />
           {/* <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -421,8 +443,9 @@ function Mint() {
             }}
           >
             Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. 
+            <br/>
+            0.05ETH excludes gas fees.
           </s.TextDescription>
           <s.SpacerSmall />
           {/* <s.TextDescription
