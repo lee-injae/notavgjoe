@@ -66,6 +66,8 @@ function Home() {
                         style={ {marginTop: "1em"} } alt="twitter-logo"/>
                     </a>
 
+                    
+
                 </div>
 
                 <button className="hamburger" onClick={
@@ -80,16 +82,24 @@ function Home() {
 
             <main className={menuOpen ? "main main-push-down" : "main main-close"}>
 
-                <section className="section-one">
-            
-                <div className="tagline flex">
-                    {/* <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3" style="margin-bottom: .5rem;">
-                        Three panels,</h1>
-                    <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3" style="margin-bottom: .5rem;">
-                        Million stories,</h1>
-                    <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3">Life goes on.</h1>  */}
-                    <img className="tagline-img" src={`${process.env.PUBLIC_URL}assets/tagline.png`} alt="slogan" style={ {marginTop: "1em"} }/>
-                </div>
+                <section className="section-one flex">
+                
+                    <div className="landing-img flex">
+                        {/* <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3" style="margin-bottom: .5rem;">
+                            Three panels,</h1>
+                        <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3" style="margin-bottom: .5rem;">
+                            Million stories,</h1>
+                        <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3">Life goes on.</h1>  */}
+                        <img src={`${process.env.PUBLIC_URL}assets/joe.png`} 
+                        alt="landing-image" style={ {marginTop: "1em"} }/>
+                    </div>
+
+                    <div className='landing-msg'>
+                        <h2 className='fs-600 letter-spacing-4'>
+                            !=Avg(Joe) a.k.a. Not Average Joe is 3-panel 
+                            <span className="italic">Comic Strip
+                            </span> that make up 3,333 unique NFTs on Ethereum </h2> 
+                    </div>
             
                 </section>
 
@@ -118,7 +128,7 @@ function Home() {
 
                         </div>
 
-                        <p className="text-center fs-500 letter-spacing-5" style={ {lineHeight: "2"} }>
+                        {/* <p className="text-center fs-500 letter-spacing-5" style={ {lineHeight: "2"} }>
                             <span className="strong">"I was an average Joe</span> living in my mom's basement when <span className="strong">
                             some weirdo suggested me to buy some coins</span>. 
                             I was like "nah, dude...", but then he sounded kinda right so I bought 10,000 of them with 
@@ -126,7 +136,7 @@ function Home() {
                             <span className="strong"> I'm not an average Joe anymore</span>. I was lucky 
                             but I know that there are many who aren't, so atm... 
                             I am supporting those in need.    
-                        </p>
+                        </p> */}
 
                         <h4 className="fs-500 text-center" style={ {marginBottom: "3em"} }> 
                             My bank balance is $0.99 but... 
@@ -136,11 +146,13 @@ function Home() {
                         </h4>
 
                         <h3 className="fs-600 strong text-center" style={ {marginBottom: ".5em"} }>
-                            We were all Avg(Joes) at one point, weren't we?
+                            <h2>What's your story? :)</h2>
                         </h3>
                         
                         <h4 className="fs-500 letter-spacing-4 text-center" style={ {marginBottom: "5em"} }>
-                            Tell us your story on <a href="https://twitter.com/NotAvgJoeNFT" target="_blank" rel="noreferrer"><u>Twitter</u></a> and <a href="https://discord.gg/TQ4uBkHAjn" target="_blank" rel="noreferrer"><u>Discord</u></a>
+                            Tell us your story on <a href="https://twitter.com/NotAvgJoeNFT" 
+                            target="_blank" rel="noreferrer"><u>Twitter</u></a> and <a href="https://discord.gg/TQ4uBkHAjn" 
+                            target="_blank" rel="noreferrer"><u>Discord</u></a>
                         </h4>    
 
                         <div className='mint-btn'>
