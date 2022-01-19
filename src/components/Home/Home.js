@@ -217,6 +217,16 @@ function Home() {
                                 </p>
                             </div>
 
+                            <div className="member-col">
+                                <img src={`${process.env.PUBLIC_URL}/assets/jb.png`} alt="founder-hannibal"/>
+                                <h4 className="member-name fs-500 uppercase letter-spacing-5 strong">Hannibal</h4>
+                                <p className="fs-400 letter-spacing-5">
+                                    A sports-fanatic Avg(Joe) from Michigan and an expert in slicing data
+                                    and pizza during early days of career. Now a Fortune 33 strategy and marketing advisor 
+                                    who accidentally got into NFT and never looked back.
+                                </p>
+                            </div>
+
                         </div>
 
                     </div>

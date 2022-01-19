@@ -418,7 +418,7 @@ function Mint() {
               </>
             )}
             <s.SpacerSmall />
-              <a href="https://opensea.io/collection/notavgjoe" target="_blank" style={{ width: "40px" }}>
+              <a href="https://opensea.io/collection/notavgjoe" target="_blank" rel="noreferrer" style={{ width: "40px" }}>
                       <img 
                         alt="Opensea logo"
                         src="/config/images/opensea-logo.png"

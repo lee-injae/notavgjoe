@@ -117,7 +117,7 @@
     color: hsl( var(--clr-black) ); */
     background-color: hsl( var(--clr-grey) );
     background-image: url("https://notavgjoe.com/assets/newspaper-background.jpeg");
-    background-size: contain;
+    background-size: cover;
     /* line-height: 1.5;
     min-height: 100vh; */
     width: 100vw;
@@ -617,6 +617,7 @@
   
   .member-col {
     text-align: center;
+    /* background-color: hotpink; */
   }
   
   .member-col img {
@@ -647,15 +648,17 @@
   @media screen and (min-width: 48em) {
     .team-cols {
         flex-direction: row;
-        gap: var(--gap, 0rem);
-        align-items: flex-start;
+        /* gap: var(--gap, 0rem); */
+        /* align-items: flex-start; */
         justify-content: space-between;
+        /* background-color:green */
     }
   
     .member-col {
         /* border: brown solid 2px; */
-        width: 23%;
+        width: 18%;
         text-align: left;
+        
         /* margin: 0; */
         /* margin: auto 0; */
     }
@@ -673,6 +676,8 @@
         line-height: 1.2;
     }
   }
+
+  /* --------------------------------- */
   
   hr {
     margin-bottom: 3em;
