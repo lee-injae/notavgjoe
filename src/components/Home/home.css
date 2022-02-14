@@ -608,7 +608,6 @@
     }
   
     .panels {
-        /* border: gold 5px solid; */
         flex-direction: row;
         gap: var(--gap, 1rem);
         /* background-color: chartreuse; */
@@ -620,38 +619,40 @@
   Section Three - The Team 
   ----------------------- */
   
+  .section-three {
+    margin: 0 auto;
+    padding: 0 2em;
+    /* background-color: blueviolet; */
+  }
 
   .team-cols {
-    /* display:flex; */
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* gap: var(--gap, 2rem); */
-    /* border: red solid 4px; */
   }
   
   .member-col {
-    text-align: center;
+    /* text-align: center; */
     /* background-color: hotpink; */
   }
   
   .member-col img {
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 1em;
   }
   
   .member-name {
     margin-bottom: .5em;
+    text-align: center;
   }
+
+  .member-col p {
+    width: 80%;
+    margin: 0 auto;
+}
   
   @media screen and (min-width: 35em) {
     .team-cols {
-        /* border: rosybrown solid 2px; */
         flex-direction: column;
-        /* align-items: center; */
-    }
-  
-    .member-col img {
-        margin: auto;
-        margin-bottom: 1em;
     }
   
     .member-col p {
@@ -662,16 +663,15 @@
   @media screen and (min-width: 48em) {
     .team-cols {
         flex-direction: row;
-        /* gap: var(--gap, 0rem); */
-        /* align-items: flex-start; */
-        justify-content: space-between;
+        justify-content: space-evenly;
         /* background-color:green */
     }
   
     .member-col {
         /* border: brown solid 2px; */
-        width: 18%;
+        width: 20%;
         text-align: left;
+
         
         /* margin: 0; */
         /* margin: auto 0; */

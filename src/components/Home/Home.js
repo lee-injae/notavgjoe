@@ -169,9 +169,6 @@ function Home() {
                         < br/>
 
                         <div className='mint-btn-error-msg'>{showMintNotReady}</div>
-
-                        
-                    
                     </div>
 
                 </section>
