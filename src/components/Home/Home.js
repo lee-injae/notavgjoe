@@ -22,7 +22,7 @@ function Home() {
         
         <div className="Home">
         
-            <header className="flex">
+            <header className="header flex">
 
                 <a className="logo-link" href="index.html">
                     <img className="logo" src={`${process.env.PUBLIC_URL}/assets/logo-white.png`} alt="not-average-joe-logo"/>
@@ -34,9 +34,9 @@ function Home() {
                         <em>Team</em>
                     </a>
                 
-                    <a className="uppercase fs-400 letter-spacing-4" href="#roadmap">
+                    {/* <a className="uppercase fs-400 letter-spacing-4" href="#roadmap">
                         <em>Roadmap</em>
-                    </a>
+                    </a> */}
                     
                     <a className="uppercase fs-400 letter-spacing-4" href="#faq">
                         <em>FAQ</em>
@@ -52,12 +52,10 @@ function Home() {
                         style={ {marginTop: "1.2em"} } alt="instagram-logo"/>
                     </a>
 
-                    <a className="discord" href="https://discord.gg/TQ4uBkHAjn" target="_blank" rel="noreferrer">
-                        <img src={`${process.env.PUBLIC_URL}/assets/discord-v02.png`} 
-                        // onmouseover="this.src='./assets/discord-redd.png';" 
-                        // onmouseout="this.src='./assets/discord-v02.png';"
+                    {/* <a className="discord" href="https://discord.gg/TQ4uBkHAjn" target="_blank" rel="noreferrer">
+                        <img src={`${process.env.PUBLIC_URL}/assets/discord-v02.png`}  
                         style={ {marginTop: "1em"} } alt="discord-logo"/>
-                    </a>
+                    </a> */}
 
                     <a className="twitter" href="https://twitter.com/NotAvgJoeNFT" target="_blank" rel="noreferrer">
                         <img src={`${process.env.PUBLIC_URL}/assets/twitter-v02.png`} 
@@ -95,10 +93,9 @@ function Home() {
                     </div>
 
                     <div className='landing-msg'>
-                        <h2 className='fs-600 letter-spacing-4'>
-                            !=Avg(Joe) a.k.a. Not Average Joe is 3-panel 
-                            <span className="italic">Comic Strip
-                            </span> that make up 3,333 unique NFTs on Ethereum </h2> 
+                        <h2 className='fs-600 letter-spacing-4'>!=Avg(Joe) a.k.a. Not Average Joe is 3-panel 
+                            <span className="italic"> Comic Strip</span> that make up 3,333 unique NFTs on Ethereum Network
+                        </h2> 
                     </div>
             
                 </section>
@@ -151,8 +148,7 @@ function Home() {
                         
                         <h4 className="fs-500 letter-spacing-4 text-center" style={ {marginBottom: "5em"} }>
                             Tell us your story on <a href="https://twitter.com/NotAvgJoeNFT" 
-                            target="_blank" rel="noreferrer"><u>Twitter</u></a> and <a href="https://discord.gg/TQ4uBkHAjn" 
-                            target="_blank" rel="noreferrer"><u>Discord</u></a>
+                            target="_blank" rel="noreferrer"><u>Twitter</u></a> 
                         </h4>    
 
                         <div className='mint-btn'>
@@ -246,7 +242,7 @@ function Home() {
 
                 <hr/>
 
-                <section className="section-four" id="roadmap" style={ {marginBottom: "3em"} }>
+                {/* <section className="section-four" id="roadmap" style={ {marginBottom: "3em"} }>
 
                     <div className="container">
 
@@ -271,7 +267,7 @@ function Home() {
                         </div>
 
                     </div>
-                </section>
+                </section> */}
 
                 <hr/>
 
@@ -310,13 +306,13 @@ function Home() {
                             <li className="answers">3,333 randomly generated NFTs; 1,111 per each panel</li>
                         </div>
                         
-                        <div className="questions">Q. When pre-sale & public-sale?
+                        {/* <div className="questions">Q. When pre-sale & public-sale?
                             <li className="answers">Pre-sale: 5PM/8PM PST/EST, January 13 | Public-sale: 5PM/8PM PST/EST, January 14, 2022</li>
-                        </div>
+                        </div> */}
                                         
-                        <div className="questions">Q. Price?
+                        {/* <div className="questions">Q. Price?
                             <li className="answers">Pre-sale: 0.03 ETH, Public-sale: 0.05 ETH</li>
-                        </div>
+                        </div> */}
                         
                         <div className="questions">Q. How many mints per wallet?
                             <li className="answers">Twenty</li>
@@ -327,7 +323,7 @@ function Home() {
                         </div>
 
                         <div className="questions">Q. How can I join?
-                            <li className="answers">We'd love you see you on <a href="https://twitter.com/NotAvgJoeNFT" target="_blank" rel="noreferrer"><u>Twitter</u></a> and <a href="https://discord.gg/TQ4uBkHAjn" target="_blank" rel="noreferrer"><u>Discord</u></a>
+                            <li className="answers">We'd love you see you on <a href="https://twitter.com/NotAvgJoeNFT" target="_blank" rel="noreferrer"><u>Twitter</u></a> 
                             </li>
                         </div>
 
