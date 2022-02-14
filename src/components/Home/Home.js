@@ -89,13 +89,13 @@ function Home() {
                             Million stories,</h1>
                         <h1 className="fs-700 ff-sans-cond uppercase letter-spacing-3">Life goes on.</h1>  */}
                         <img src={`${process.env.PUBLIC_URL}assets/joe.png`} 
-                        alt="landing-image" style={ {marginTop: "1em"} }/>
+                        alt="landing-image" style={ {marginBottom: "1em"} }/>
                     </div>
 
                     <div className='landing-msg'>
-                        <h2 className='fs-600 letter-spacing-4'>!=Avg(Joe) a.k.a. Not Average Joe is 3-panel 
-                            <span className="italic"> Comic Strip</span> that make up 3,333 unique NFTs on Ethereum Network
-                        </h2> 
+                        <h2 className='fs-600 letter-spacing-4' style={ {marginBottom: ".5em"} }>!=Avg(Joe) a.k.a. Not Average Joe</h2> 
+                        <h2 className='fs-600 letter-spacing-4' style={ {marginBottom: ".5em"} }>is 3-panel<span className="italic"> Comic Strip</span> NFT</h2> 
+                        <h2 className='fs-600 letter-spacing-4'>on Ethereum Network</h2> 
                     </div>
             
                 </section>
@@ -137,9 +137,9 @@ function Home() {
 
                         <h4 className="fs-500 text-center" style={ {marginBottom: "3em"} }> 
                             My bank balance is $0.99 but... 
-                            <span className="fs-500 strong">I'm HODL'ing to the </span>
-                            <span className="fs-500 text-yellow">🌕</span>
-                            <span className="fs-500 strong">!!!"</span>
+                            <span className="fs-600 strong">I'm HODL'ing to the </span>
+                            <span className="fs-600 text-yellow">🌕</span>
+                            <span className="fs-600 strong">!!!"</span>
                         </h4>
 
                         <h3 className="fs-600 strong text-center" style={ {marginBottom: ".5em"} }>
