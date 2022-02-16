@@ -175,28 +175,28 @@ function Home() {
 
                 <hr/>
 
-                <section className="section-three" id="team" style={ {marginBottom: "3em"} }>
+                <section className="section-three" id="team" style={ {marginBottom: "4em"} }>
 
                     <div className="container">
 
-                        <h1 className="fs-700 strong uppercase" style={ {marginBottom: ".75em"} }>The Team</h1>
+                        <h1 className="fs-700 strong uppercase" style={ {marginBottom: "1em"} }>The Team</h1>
 
                         <div className="team-cols flex">
                             
                             <div className="member-col">
                                 <img src={`${process.env.PUBLIC_URL}/assets/dj.png`} alt="founder-7.7years-old"/>
-                                <h4 className="member-name fs-500 uppercase letter-spacing-5 strong">7.7YearsOld</h4>
-                                <p className="fs-400 letter-spacing-5">
-                                    An Avg(Joe) with C grades, cowlick hair and ashtray odor 
-                                    turnt investment banker who told his boss “ser I'm done, gn” and left. 
+                                <h4 className="member-name uppercase strong">7.7YearsOld</h4>
+                                <p className="member-desc">
+                                    An Avg(Joe) with C grades, 
+                                    turnt investment banker on the wall street who told his boss “ser I'm done, gn” and left. 
                                     Now !=Avg(Joe) deep into NFTs and the people in the space.
                                 </p>
                             </div>
                             
                             <div className="member-col">
                                 <img src={`${process.env.PUBLIC_URL}/assets/ij.png`} alt="founder-aahjai"/>
-                                <h4 className="member-name fs-500 uppercase letter-spacing-5 strong">AAH-JAI</h4>
-                                <p className="fs-400 letter-spacing-5">
+                                <h4 className="member-name uppercase strong">AHJAI</h4>
+                                <p className="member-desc">
                                     An Avg(Joe) with rainbow-color-hair turnt one-of-a-kind 
                                     startup CEO turnt a Avg(dev). Lives in many places across the world as long 
                                     as no quarantine upon arrival.
@@ -205,18 +205,18 @@ function Home() {
 
                             <div className="member-col">
                                 <img src={`${process.env.PUBLIC_URL}/assets/hk.png`} alt="founder-zoho"/>
-                                <h4 className="member-name fs-500 uppercase letter-spacing-5 strong">ZoHo</h4>
-                                <p className="fs-400 letter-spacing-5">
-                                    A shy Avg(Joe) who couldn't press the stop button on a 
+                                <h4 className="member-name uppercase strong">ZoHo</h4>
+                                <p className="member-desc">
+                                    A shy Avg(Joe) who couldn't press the stop in 
                                     bus due to people's attention. Now a top storyboard designer and an artist 
-                                    for Korean movies and TV series.
+                                    for popular Korean movies and TV series.
                                 </p>
                             </div>
 
                             <div className="member-col">
                                 <img src={`${process.env.PUBLIC_URL}/assets/dh.png`} alt="founder-frenchcatbulldog"/>
-                                <h4 className="member-name fs-400 uppercase letter-spacing-5 strong">FrenchBull DougtheCat</h4>
-                                <p className="fs-400 letter-spacing-5">
+                                <h4 className="member-name uppercase strong">FrenchBull DougtheCat</h4>
+                                <p className="member-desc">
                                     An ex-DJ and fun craving Avg(Joe) who once created own brand 
                                     sold 500+ denim pants to his family members. Now a master of content strategy and marketing.
                                 </p>
@@ -224,11 +224,11 @@ function Home() {
 
                             <div className="member-col">
                                 <img src={`${process.env.PUBLIC_URL}/assets/jb.png`} alt="founder-hannibal"/>
-                                <h4 className="member-name fs-500 uppercase letter-spacing-5 strong">Hannibal</h4>
-                                <p className="fs-400 letter-spacing-5">
+                                <h4 className="member-name uppercase strong">Hannibal</h4>
+                                <p className="member-desc">
                                     A sports-fanatic Avg(Joe) from Michigan and an expert in slicing data
-                                    and pizza during early days of career. Now a Fortune 33 strategy and marketing advisor 
-                                    who accidentally got into NFT and never looked back.
+                                    and pizza during early days of career. Now a Fortune 500 strategy consultant 
+                                    who accidentally got into NFT.
                                 </p>
                             </div>
 
@@ -266,7 +266,7 @@ function Home() {
                     </div>
                 </section> */}
 
-                <hr/>
+                {/* <hr/> */}
 
                 <section className="section-five" id="faq">
 
@@ -344,7 +344,7 @@ function Home() {
                 
                     <div>
                         <p className="text-center">© 2021 Aggressively Unemployed</p>
-                        <p className='app-version'>v1.22 </p>
+                        <p className='app-version'>v1.3 </p>
                     </div>
                 
                 </div>
