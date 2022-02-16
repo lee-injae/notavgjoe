@@ -179,7 +179,7 @@ function Home() {
 
                     <div className="container">
 
-                        <h1 className="fs-700 strong uppercase" style={ {marginBottom: "1em"} }>The Team</h1>
+                        <h1 className="fs-700 strong uppercase" style={ {marginBottom: "2rem"} }>The Team</h1>
 
                         <div className="team-cols flex">
                             
@@ -272,7 +272,7 @@ function Home() {
 
                     <div className="container letter-spacing-1">
 
-                        <h1 className="fs-700 strong uppercase" style={ {marginBottom: "1em"} }>FAQ</h1>
+                        <h1 className="fs-700 strong uppercase" style={ {marginBottom: "2rem"} }>FAQ</h1>
 
                         <div className="questions">Q. What is !=Avg(Joe) about?
 
@@ -344,7 +344,7 @@ function Home() {
                 
                     <div>
                         <p className="text-center">© 2021 Aggressively Unemployed</p>
-                        <p className='app-version'>v1.3 </p>
+                        <p className='app-version'>v1.31 </p>
                     </div>
                 
                 </div>
